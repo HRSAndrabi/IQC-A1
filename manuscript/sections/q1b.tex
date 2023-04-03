@@ -1,7 +1,48 @@
-\textbf{Problem 1b: Single qubit rotations}. Consider single-qubit operations in matrix form, corresponding to rotations by angle $\theta_R$ about $X$, $Y$ or $Z$ axes.
+\textbf{Problem 1b: General rotation}. Consider single-qubit operations in matrix form, corresponding to rotations by angle $\theta_R$ about $X$, $Y$ or $Z$ axes.
 Explain how these operators are related to the familiar Pauli matrices, X, Y and Z given in lectures.
 
 
-\textbf{Answer}. [Insert Answer]
+\textbf{Answer}. The relation between the provided general rotation operators and Pauli matrices is demonstrated by the following expression, achieved through exponentiation of the Pauli vector:
+\begin{equation}
+	\label{eqn:pauli-exponentiation}
+	e^{i\theta(\hat{n} \cdot \sigma)} = I \cos(\theta) + i(\hat{n} \cdot \sigma) \sin(\theta),
+\end{equation}
+
+where ($\sigma = \sigma_x\hat{x} + \sigma_y\hat{y} + \sigma_z\hat{z}$) is the Pauli vector, and $\hat{n} = n_x\hat{x} + n_y\hat{y} + n_z\hat{z}$ is a unit vector. 
+The above equation (\ref{eqn:pauli-exponentiation}) can be derived using  taylor series expansion of $e^{i\theta(\hat{n} \cdot \sigma)}$.
+\begin{align*}
+	e^{i\theta(\hat{n} \cdot \sigma)} &= I + i\theta\hat{n}\cdot\sigma  -\frac{\theta^2}{2!}(\hat{n}\cdot\sigma)^2 - i\frac{\theta^3}{3!}(\hat{n}\cdot\sigma)^3 + \dotsb + i^n\frac{\theta^n}{n!}(\hat{n}\cdot\sigma)^n \\
+	&= \sum^{\infty}_{n=0} \frac{(-1)^n(\theta\hat{n}\cdot\sigma)^{2n}}{(2n)!} + i\sum^{\infty}_{n=0} \frac{(-1)^n(\theta\hat{n}\cdot\sigma)^{2n+1}}{(2n+1)!}
+\end{align*}
+
+Note that all even powers of the inner product of $\hat{n}$ and $\sigma$ are equal to the identity matrix, such that $(\hat{n} \cdot \sigma)^{2n} = I$, for all $n \in \mathbb{Z}^+_0$, and all odd powers give $(\hat{n} \cdot \sigma)^{2n+1} = \hat{n} \cdot \sigma$, for all $n \in \mathbb{Z}^+_0$.
+Thus, we have
+\begin{align*}
+	e^{i\theta(\hat{n} \cdot \sigma)} &= I\sum^{\infty}_{n=0} \frac{(-1)^n\theta^{2n}}{(2n)!} + i(\hat{n}\cdot\sigma)\sum^{\infty}_{n=0} \frac{(-1)^n\theta^{2n+1}}{(2n+1)!} \\
+	&= I \cos(\theta) + i(\hat{n} \cdot \sigma) \sin(\theta)
+\end{align*}
+
+Using this expression, one may recover the general rotation operators by substituting in appropriate values for the unit vector $\hat{n}$, and applying a global phase of $e^{i\frac{\pi}{2}}$ (let $\theta = \frac{\theta_R}{2}$, for consistency of notation).
+\begin{align*}
+	\hat{n} = (1, 0, 0) 
+	&\rightarrow 
+	e^{i\theta(\hat{n} \cdot \sigma)} = I \cos(\theta) + iX \sin(\theta) = e^{i\frac{\pi}{2}}\begin{bmatrix}
+		\cos(\theta) & -i\sin(\theta) \\
+		-i\sin(\theta) & \cos(\theta)
+	\end{bmatrix} \\
+	\hat{n} = (0, 1, 0) 
+	&\rightarrow 
+	e^{i\theta(\hat{n} \cdot \sigma)} = I \cos(\theta) + iY \sin(\theta) = e^{i\frac{\pi}{2}}\begin{bmatrix}
+		\cos(\theta) & -\sin(\theta) \\
+		\sin(\theta) & \cos(\theta)
+	\end{bmatrix} \\
+	\hat{n} = (0, 0, 1) 
+	&\rightarrow 
+	e^{i\theta(\hat{n} \cdot \sigma)} = I \cos(\theta) + iZ \sin(\theta) = e^{i\frac{\pi}{2}}\begin{bmatrix}
+		\cos(\theta) -i\sin(\theta) & 0 \\
+		0 & \cos(\theta) + i\sin(\theta)
+	\end{bmatrix} 
+\end{align*}
+
 
 
