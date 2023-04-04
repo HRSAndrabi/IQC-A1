@@ -4,6 +4,20 @@ Note that there is an implied tensor product in these combined operators.
 In this case, what is the upper bound on the expectation (mean value) of the quantity $QS + RS + RT - QT$? 
 This is called Bell's inequality.
 
-\textbf{Answer}. [Insert Answer]
+\textbf{Answer}. Since $S, T \in \{-1, 1\}$, we have either $S=T$ or $S=-T$.
+Now consider the following combination
+\begin{equation}
+	\label{eqn:CHSH}
+	QS + RS + RT - QT = Q(S - T) + R(S + T)
+\end{equation}
+
+In the case $S=T$, $Q(S - T) =0$, while in the case $S=-T$, $R(S + T) =0$.
+In either eventuality, one of the terms on the RHS of equation \ref{eqn:CHSH} will become zero, and the remaining term will take the values $\pm2$.
+Thus, if the measurement is repeated over $n$ independent trials, the upper bound on the expectation of the measured quantity is given by
+\begin{equation*}
+	\frac{1}{n}\sum_{i=1}^n (Q_iS_i + R_iS_i + R_iT_i - Q_iT_i) \leq 2
+\end{equation*}
+
+
 
 
