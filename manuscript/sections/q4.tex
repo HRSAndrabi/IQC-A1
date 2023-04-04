@@ -1,8 +1,45 @@
-\textbf{Problem 4: Four-qubit GHZ state}. Using QUI, create a circuit which constructs the four qubit GHZ-state, using only single qubit and two-qubit operations. 
+\textbf{Problem 4: Four-qubit GHZ state}. Using QUI, create a circuit which constructs the four qubit GHZ state, using only single qubit and two-qubit operations. 
 Optimise the circuit as much as possible. 
 Write down the state at each time-step through the circuit.
 
 
-\textbf{Answer}. [Insert Answer]
+\textbf{Answer}. Starting with four qubits initialised in computational state $\ket{0}$, we can construct a four-qubit GHZ state by placing a single qubit in superposition, and then using this superposed qubit as a control for repeated $CNOT$ gates on the remaining three qubits.
+This results in a maximally entangled state GHZ state, as demonstrated below.
 
+\begin{center}
+\begin{quantikz}[slice all, slice titles=$T_\col$, column sep=2cm]
+	\lstick{$\ket{0}$} & \gate{H} & \ctrl{1} & \ctrl{2} & \ctrl{3} & \qw \\
+	\lstick{$\ket{0}$} & \qw & \targ{} & \qw & \qw & \qw \\
+	\lstick{$\ket{0}$} & \qw & \qw & \targ{} & \qw & \qw \\
+	\lstick{$\ket{0}$} & \qw & \qw & \qw & \targ{} & \qw 
+\end{quantikz}
+\end{center}
 
+$(T_0)$ We begin with zero-initialised state $\ket{\psi_0}$ comprising four qubits
+\begin{equation*}
+	\ket{\psi_0} = \ket{0} \otimes \ket{0} \otimes \ket{0} \otimes \ket{0}
+\end{equation*}
+
+$(T_1)$ Apply a Hadamard gate to the first qubit
+\begin{align*}
+	\ket{\psi_1} &= H_1 \ket{\psi_0} \\
+	&= \frac{\ket{0} + \ket{1}}{\sqrt{2}} \otimes \ket{0} \otimes \ket{0} \otimes \ket{0}
+\end{align*}
+
+$(T_2)$ Apply a CNOT gate with the first qubit as the control, and the second qubit as the target
+\begin{align*}
+	\ket{\psi_2} &= CNOT_{12} \ket{\psi_1} \\
+	&= \frac{\ket{00} + \ket{11}}{\sqrt{2}} \otimes \ket{0} \otimes \ket{0}
+\end{align*}
+
+$(T_3)$ Apply a CNOT gate with the first qubit as the control, and the third qubit as the target
+\begin{align*}
+	\ket{\psi_3} &= CNOT_{13} \ket{\psi_2} \\
+	&= \frac{\ket{000} + \ket{111}}{\sqrt{2}} \otimes \ket{0}
+\end{align*}
+
+$(T_4)$ Apply a CNOT gate with the first qubit as the control, and the fourth qubit as the target, thereby achieving the four-qubit GHZ state
+\begin{align*}
+	\ket{\psi_4} &= CNOT_{14} \ket{\psi_3} \\
+	&= \frac{\ket{0000} + \ket{1111}}{\sqrt{2}}
+\end{align*}
