@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.28)  4 APR 2023 16:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.8.28)  4 APR 2023 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -289,10 +289,10 @@ File: graphics/q1c-2.pdf Graphic file (type pdf)
 <use graphics/q1c-2.pdf>
 Package pdftex.def Info: graphics/q1c-2.pdf  used on input line 79.
 (pdftex.def)             Requested size: 337.86467pt x 140.69684pt.
-) (./sections/q2a.tex) (./sections/q2b.tex) (./sections/q3a.tex [3 <./graphics/q1c-1.pdf> <./graphics/q1c-2.pdf
+) (./sections/q2a.tex [3 <./graphics/q1c-1.pdf> <./graphics/q1c-2.pdf
 
 pdfTeX warning: pdflatex (file ./graphics/q1c-2.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->]) (./sections/q3b.tex) (./sections/q3c.tex) (./sections/q4.tex) (./sections/q5a.tex) (./sections/q5b.tex) (./sections/q5c.tex) (./sections/q6a.tex [4]) (./sections/q6b.tex) [5] (./main.aux) ) 
+>]) (./sections/q2b.tex) (./sections/q3a.tex) (./sections/q3b.tex) (./sections/q3c.tex) (./sections/q4.tex) (./sections/q5a.tex [4]) (./sections/q5b.tex) (./sections/q5c.tex) (./sections/q6a.tex) (./sections/q6b.tex) [5] (./main.aux) ) 
 Here is how much of TeX's memory you used:
  6193 strings out of 478268
  103863 string characters out of 5846347
@@ -302,7 +302,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  68i,15n,77p,622b,364s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on main.pdf (6 pages, 2311166 bytes).
+Output written on main.pdf (6 pages, 2313564 bytes).
 PDF statistics:
  1436 PDF objects out of 1440 (max. 8388607)
  722 compressed objects within 8 object streams

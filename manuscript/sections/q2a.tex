@@ -1,6 +1,23 @@
 \textbf{Problem 2a: Actions on single qubit}. Write down the action of $H$, $T$ and $T^\dag$ on an arbitrary single qubit state in ket notation.
 
 
-\textbf{Answer}. [Insert Answer]
+\textbf{Answer}. Let $\ket{\psi} = \alpha\ket{0} + \beta\ket{1}$ represent an arbitrary single qubit, where $|\alpha|^2 + |\beta|^2 = 1$. 
+The action of a Hadamard gate on an arbitrary qubit $\ket{\psi}$ is given by
+\begin{align*}
+	H\ket{\psi} &= \frac{1}{\sqrt{2}}(\alpha \ket{0} + \beta \ket{0} + \alpha \ket{1} - \beta ket{1})  \\
+	&= \frac{1}{\sqrt{2}}\Big(\alpha(\ket{0} + \ket{1}) + \beta(\ket{0} - \ket{1})\Big)  \\
+	&= \alpha \ket{+} + \beta \ket{-}
+\end{align*}
 
+The action of a $T$ gate on an arbitrary qubit $\ket{\psi}$ is given by
+\begin{align*}
+	T\ket{\psi} &= \alpha \ket{0} + \beta e^{i \frac{\pi}{4}} \ket{1} \\
+	& = \alpha \ket{0} + \frac{\beta}{\sqrt{2}} (1 + i) \ket{1}
+\end{align*}
+
+The action of a $T^\dag$ gate on an arbitrary qubit $\ket{\psi}$ is given by
+\begin{align*}
+	T^\dag\ket{\psi} &= \alpha \ket{0} + \beta e^{-i \frac{\pi}{4}} \ket{1} \\
+	& = \alpha \ket{0} + \frac{\beta}{\sqrt{2}} (1 - i) \ket{1}
+\end{align*}
 
