@@ -475,6 +475,16 @@ INPUT sections/q1c.tex
 INPUT ./sections/q1c.tex
 INPUT ./sections/q1c.tex
 INPUT sections/q1c.tex
+INPUT ./graphics/q1c-1.pdf
+INPUT ./graphics/q1c-1.pdf
+INPUT graphics/q1c-1.pdf
+INPUT ./graphics/q1c-1.pdf
+INPUT ./graphics/q1c-1.pdf
+INPUT ./graphics/q1c-2.pdf
+INPUT ./graphics/q1c-2.pdf
+INPUT graphics/q1c-2.pdf
+INPUT ./graphics/q1c-2.pdf
+INPUT ./graphics/q1c-2.pdf
 INPUT ./sections/q2a.tex
 INPUT ./sections/q2a.tex
 INPUT ./sections/q2a.tex
