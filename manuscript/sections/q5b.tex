@@ -4,6 +4,49 @@ What is the expectation value $\langle QS + RS + RT - QT \rangle$ for the produc
 What is the max possible value?
 
 
-\textbf{Answer}. [Insert Answer]
+\textbf{Answer}. We can determine the eigenvalues of Alice and Bob's observables ($Q, R, S, T$) by solving their characteristic equations.
 
+The eigenvalues of $Q$ are given by
+\begin{align*}
+	\det(\lambda I - Z) &= 0 \\
+	\det(\begin{bmatrix}
+		\lambda - 1 & 0 \\
+		0 & \lambda + 1
+	\end{bmatrix}) &= 0\\
+	(\lambda - 1)(\lambda + 1) &= 0 \\
+	\lambda &= \pm 1
+\end{align*}
+
+The eigenvalues of $R$ are given by
+\begin{align*}
+	\det(\lambda I - X) &= 0 \\
+	\det(\begin{bmatrix}
+		\lambda & -1 \\
+		-1 & \lambda
+	\end{bmatrix}) &= 0\\
+	\lambda^2 - 1 &= 0 \\
+	\lambda &= \pm 1
+\end{align*}
+
+The eigenvalues of $S$ are given by
+\begin{align*}
+	\det(\lambda I - \left(-\frac{Z+X}{\sqrt{2}}\right)) &= 0 \\
+	\det(\begin{bmatrix}
+		\lambda + \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+		\frac{1}{\sqrt{2}} & \lambda - \frac{1}{\sqrt{2}}
+	\end{bmatrix}) &= 0\\
+	(\lambda + \frac{1}{\sqrt{2}})(\lambda - \frac{1}{\sqrt{2}}) - \frac{1}{2} &= 0 \\
+	\lambda &= \pm 1
+\end{align*}
+
+The eigenvalues of $T$ are given by
+\begin{align*}
+	\det(\lambda I - \frac{Z-X}{\sqrt{2}}) &= 0 \\
+	\det(\begin{bmatrix}
+		\lambda - \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
+		\frac{1}{\sqrt{2}} & \lambda + \frac{1}{\sqrt{2}}
+	\end{bmatrix}) &= 0\\
+	(\lambda - \frac{1}{\sqrt{2}})(\lambda + \frac{1}{\sqrt{2}}) - \frac{1}{2} &= 0 \\
+	\lambda &= \pm 1
+\end{align*}
 
