@@ -5,6 +5,45 @@ How does this value for $\langle QS + RS + RT - QT\rangle$ compare to the value 
 This is the basis of the CHSH inequality.
 
 
-\textbf{Answer}. The quantity $\langle QS + RS + RT - QT\rangle$ is maximised when $\phi = \frac{\pi}{4}$
+\textbf{Answer}. Let $C = QS + RS + RT - QT$ for brevity of notation, as above. 
+We begin by calculating the expectation $\langle C\rangle$ as follows
+\begin{align*}
+	\langle C \rangle &= \bra{\psi_{AB}} C \ket{\psi_{AB}}	\\
+	&= -\sqrt{2}
+	\begin{bmatrix}
+		0 \\
+		\cos(\phi)\\
+		-\sin(\phi) \\
+		0
+	\end{bmatrix}^T
+	\begin{bmatrix}
+		-1	&	0	&	0	&	-1	\\
+		0	&	1	&	-1	&	0	\\
+		0	&	-1	&	1	&	0	\\
+		-1	&	0	&	0	&	-1	
+	\end{bmatrix} 
+	\begin{bmatrix}
+		0 \\
+		\cos(\phi)\\
+		-\sin(\phi) \\
+		0
+	\end{bmatrix} \\
+	&=\sqrt{2}(
+		\cos(\phi)(cos(\phi) + sin(\phi)) +
+		\sin(\phi)(cos(\phi) + sin(\phi))
+	)\\
+	&=\sqrt{2}(
+		\cos^2(\phi) + cos(\phi)sin(\phi) +
+		\sin(\phi)cos(\phi) + sin^2(\phi)
+	)\\
+	&= \sqrt{2}(sin(2\phi) + 1)
+\end{align*}
 
+Thus, the quantity $\langle QS + RS + RT - QT\rangle$ is maximised for $\phi = \frac{2n\pi}{4}$, $n \in \mathbb{Z}^+$. 
+As such, the inequality is modified as follows:
+\begin{equation*}
+	\langle QS + RS + RT - QT \rangle \leq 2\sqrt{2}
+\end{equation*}
+
+This value exceeds the upper bound under classical mechanics, which suggests that observable phenomena are not well-explained by local hidden variables.
 
