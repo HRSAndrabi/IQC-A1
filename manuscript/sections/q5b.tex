@@ -50,3 +50,102 @@ The eigenvalues of $T$ are given by
 	\lambda &= \pm 1
 \end{align*}
 
+We calculate the expectation value of $\langle QS + RS + RT - QT \rangle$ with reference to the state $\ket{\psi_{AB}}$ by evaluating the expression
+\begin{align*}
+	\langle QS + RS + RT - QT \rangle &= \bra{\psi_{AB}} QS + RS + RT - QT \ket{\psi_{AB}}	
+\end{align*}
+
+Let $C = QS + RS + RT - QT$ for brevity of notation.
+Begin by calculating tensor products $QS, RS, RT$ and $QT$
+\begin{align*}
+	QS &= Z \otimes -\frac{Z+X}{\sqrt{2}} 
+	= -\frac{1}{\sqrt{2}}\begin{bmatrix}
+		1	&	1	&	0	&	0	\\
+		1	&	-1	&	0	&	0	\\
+		0	&	0	&	-1	&	-1	\\
+		0	&	0	&	-1	&	1	
+	\end{bmatrix} \\
+	RS &= X \otimes -\frac{Z+X}{\sqrt{2}} 
+	= -\frac{1}{\sqrt{2}}\begin{bmatrix}
+		0	&	0	&	1	&	1	\\
+		0	&	0	&	1	&	-1	\\
+		1	&	1	&	0	&	0	\\
+		1	&	-1	&	0	&	0	
+	\end{bmatrix} \\
+	RT &= X \otimes \frac{Z-X}{\sqrt{2}} 
+	= -\frac{1}{\sqrt{2}}\begin{bmatrix}
+		0	&	0	&	1	&	-1	\\
+		0	&	0	&	-1	&	-1	\\
+		1	&	-1	&	0	&	0	\\
+		-1	&	-1	&	0	&	0	
+	\end{bmatrix} \\
+	QT &= Z \otimes \frac{Z-X}{\sqrt{2}} 
+	= -\frac{1}{\sqrt{2}}\begin{bmatrix}
+		1	&	-1	&	0	&	0	\\
+		-1	&	-1	&	0	&	0	\\
+		0	&	0	&	-1	&	1	\\
+		0	&	0	&	1	&	1	
+	\end{bmatrix} 
+\end{align*}
+
+Thus, $C$ is given by
+\begin{equation*}
+	C
+	= -\sqrt{2}\begin{bmatrix}
+		-1	&	0	&	0	&	-1	\\
+		0	&	1	&	-1	&	0	\\
+		0	&	-1	&	1	&	0	\\
+		-1	&	0	&	0	&	-1	
+	\end{bmatrix} 
+\end{equation*}
+
+Now, we calculate the joint state $\ket{\psi_{AB}}$ as follows
+\begin{align*}
+	\ket{\psi_{AB}} &= \ket{\psi_A} \otimes \ket{\psi_B} \\
+	&= \begin{bmatrix}
+		\cos(\theta_A)\cos(\theta_B) \\
+		- \cos(\theta_A)\sin(\theta_B) \\
+		\sin(\theta_A)\cos(\theta_B) \\
+		- \sin(\theta_A)\sin(\theta_B)
+	\end{bmatrix}
+\end{align*}
+
+Now, we use the above expressions for $C$ and $\ket{\psi_{AB}}$ to calculate the expectation $\langle C \rangle$
+\begin{align*}
+	\langle C \rangle &= \bra{\psi_{AB}} C \ket{\psi_{AB}}	\\
+	&= -\sqrt{2}
+	\begin{bmatrix}
+		\cos(\theta_A)\cos(\theta_B) \\
+		- \cos(\theta_A)\sin(\theta_B) \\
+		\sin(\theta_A)\cos(\theta_B) \\
+		- \sin(\theta_A)\sin(\theta_B)
+	\end{bmatrix}^T
+	\begin{bmatrix}
+		-1	&	0	&	0	&	-1	\\
+		0	&	1	&	-1	&	0	\\
+		0	&	-1	&	1	&	0	\\
+		-1	&	0	&	0	&	-1	
+	\end{bmatrix} 
+	\begin{bmatrix}
+		\cos(\theta_A)\cos(\theta_B) \\
+		- \cos(\theta_A)\sin(\theta_B) \\
+		\sin(\theta_A)\cos(\theta_B) \\
+		- \sin(\theta_A)\sin(\theta_B)
+	\end{bmatrix} \\
+	\begin{split}
+	\;=\sqrt{2}(
+		-\cos^2(\theta_A)\cos^2(\theta_B)
+		+ \cos(\theta_A)\cos(\theta_B)\sin(\theta_A)\sin(\theta_B) \\
+		+ \cos^2(\theta_A)\sin^2(\theta_B)
+		+ \cos(\theta_A)\sin(\theta_B)\sin(\theta_A)\cos(\theta_B) \\
+		+ \sin(\theta_A)\cos(\theta_B)\cos(\theta_A)\sin(\theta_B)
+		+ \sin^2(\theta_A)\cos^2(\theta_B)\\
+		+ \sin(\theta_A)\sin(\theta_B)\cos(\theta_A)\cos(\theta_B)
+		- \sin^2(\theta_A)\sin^2(\theta_B)
+	)
+	\end{split} \\
+	&= -\sqrt{2}\cos(2\theta_A + 2\theta_Y)
+\end{align*}
+
+Thus, one can see that the maximum possible value for $\langle C \rangle$ is $\sqrt{2}$, which occurs when $(2\theta_A + 2\theta_Y = 1)$.
+
