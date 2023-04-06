@@ -3,7 +3,7 @@ Optimise the circuit as much as possible.
 Write down the state at each time-step through the circuit.
 
 
-\textbf{Answer}. Starting with four qubits initialised in computational state $\ket{0}$, we can construct a four-qubit GHZ state by placing a single qubit in superposition, and then using this superposed qubit as a control for repeated $CNOT$ gates on the remaining three qubits.
+\textbf{Answer}.\footnote{Access the circuit at \url{https://qui.science.unimelb.edu.au/circuits/642c25cf917504005f2a344a}} Starting with four qubits initialised in computational state $\ket{0}$, we can construct a four-qubit GHZ state by placing a single qubit in superposition, and then using this superposed qubit as a control for repeated $CNOT$ gates on the remaining three qubits.
 This results in a maximally entangled state GHZ state, as demonstrated below.
 
 \begin{center}
@@ -43,3 +43,4 @@ $(T_4)$ Apply a CNOT gate with the first qubit as the control, and the fourth qu
 	\ket{\psi_4} &= CNOT_{14} \ket{\psi_3} \\
 	&= \frac{\ket{0000} + \ket{1111}}{\sqrt{2}}
 \end{align*}
+

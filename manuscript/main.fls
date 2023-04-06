@@ -1175,6 +1175,11 @@ INPUT sections/q3c.tex
 INPUT ./sections/q3c.tex
 INPUT ./sections/q3c.tex
 INPUT sections/q3c.tex
+INPUT ./graphics/q3c.pdf
+INPUT ./graphics/q3c.pdf
+INPUT graphics/q3c.pdf
+INPUT ./graphics/q3c.pdf
+INPUT ./graphics/q3c.pdf
 INPUT ./sections/q4.tex
 INPUT ./sections/q4.tex
 INPUT ./sections/q4.tex

@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1680762208 "/Users/h.andrabi/Documents/study/uni/phd/1/IQC/assignment-1/manuscript/main.tex" "main.pdf" "main" 1680762209
-  "/Users/h.andrabi/Documents/study/uni/phd/1/IQC/assignment-1/manuscript/main.tex" 1680756179 1202 ddad8cdcf77d38d3149d9f58147f8248 ""
+["pdflatex"] 1680764264 "/Users/h.andrabi/Documents/study/uni/phd/1/IQC/assignment-1/manuscript/main.tex" "main.pdf" "main" 1680764265
+  "/Users/h.andrabi/Documents/study/uni/phd/1/IQC/assignment-1/manuscript/main.tex" 1680763641 1248 a77eb8a4bcc71b6cc5db34ef16ed5547 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1246382020 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -237,9 +237,10 @@
   "graphics/q1a.pdf" 1680543226 28774 837f5d1347a1a1d43690d800c56fe15e ""
   "graphics/q1c-1.pdf" 1680591349 433499 9851adfade9109218609ecd0ffa4856e ""
   "graphics/q1c-2.pdf" 1680589667 1762540 54d5d14ee05193157c58174fc0e4aa11 ""
-  "main.aux" 1680762209 1056 77080478b22d75e277e77b34b75f8e88 "pdflatex"
+  "graphics/q3c.pdf" 1680763908 12627 03113f704857672f29bdb5f9e062fd8f ""
+  "main.aux" 1680764265 1120 1b75a62a7f262359716288d37463ced7 "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
-  "main.tex" 1680756179 1202 ddad8cdcf77d38d3149d9f58147f8248 ""
+  "main.tex" 1680763641 1248 a77eb8a4bcc71b6cc5db34ef16ed5547 ""
   "sections/q1a.tex" 1680762141 1412 97e74c1f74e167aa0a587ec52116b38f ""
   "sections/q1b.tex" 1680540128 2865 b21657d50e5676b14f21552194b51900 ""
   "sections/q1c.tex" 1680591585 2841 1d707c914b59771df2901158b5dcaf60 ""
@@ -247,12 +248,12 @@
   "sections/q2b.tex" 1680607908 5053 b164394daa212cbc8026c67ad3e67667 ""
   "sections/q3a.tex" 1680762185 2004 d7bc732c2097679973a93b69ef062315 ""
   "sections/q3b.tex" 1680761308 1680 ad1b5a56c024ce259c523c21bcdac632 ""
-  "sections/q3c.tex" 1680762208 1553 9781481afa982cb4ca234c9af937c72a ""
-  "sections/q4.tex" 1680617218 2102 9cd859b6b17b57c835c57d1287911627 ""
+  "sections/q3c.tex" 1680763492 1830 c70d638e290204ca2704b4807430c0b3 ""
+  "sections/q4.tex" 1680764263 2210 0c158614c3de7574d914c85e3d48dae6 ""
   "sections/q5a.tex" 1680688623 1057 e69609c646e3f0db22172f49d3ea2b72 ""
   "sections/q5b.tex" 1680714139 4669 15a56b14357c16d47fa5e41a7bd4c4b1 ""
   "sections/q5c.tex" 1680715442 1683 65af405f13d69148708394a780f27afc ""
-  "sections/q6a.tex" 1680708182 1409 3e9b8c70621780ecc562c370a4f6c2a6 ""
+  "sections/q6a.tex" 1680764256 1516 018eab9cf486f1bc000710ec72eb1c19 ""
   "sections/q6b.tex" 1680517551 590 de76c655eb3eb784e097609aad2fecf1 ""
   (generated)
   "main.aux"
