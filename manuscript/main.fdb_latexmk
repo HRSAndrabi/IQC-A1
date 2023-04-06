@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1680760752 "/Users/h.andrabi/Documents/study/uni/phd/1/IQC/assignment-1/manuscript/main.tex" "main.pdf" "main" 1680760753
+["pdflatex"] 1680761998 "/Users/h.andrabi/Documents/study/uni/phd/1/IQC/assignment-1/manuscript/main.tex" "main.pdf" "main" 1680761999
   "/Users/h.andrabi/Documents/study/uni/phd/1/IQC/assignment-1/manuscript/main.tex" 1680756179 1202 ddad8cdcf77d38d3149d9f58147f8248 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
@@ -237,7 +237,7 @@
   "graphics/q1a.pdf" 1680543226 28774 837f5d1347a1a1d43690d800c56fe15e ""
   "graphics/q1c-1.pdf" 1680591349 433499 9851adfade9109218609ecd0ffa4856e ""
   "graphics/q1c-2.pdf" 1680589667 1762540 54d5d14ee05193157c58174fc0e4aa11 ""
-  "main.aux" 1680760753 1056 bdb41effbf6386c0953aef21a069b534 "pdflatex"
+  "main.aux" 1680761999 1056 77080478b22d75e277e77b34b75f8e88 "pdflatex"
   "main.out" 0 -1 0 "pdflatex"
   "main.tex" 1680756179 1202 ddad8cdcf77d38d3149d9f58147f8248 ""
   "sections/q1a.tex" 1680543303 1412 97e74c1f74e167aa0a587ec52116b38f ""
@@ -246,8 +246,8 @@
   "sections/q2a.tex" 1680595116 1094 1f87b21b549dcc48e1afda05e0b4f59c ""
   "sections/q2b.tex" 1680607908 5053 b164394daa212cbc8026c67ad3e67667 ""
   "sections/q3a.tex" 1680758705 2003 900abf10fff5f9938804e06187081968 ""
-  "sections/q3b.tex" 1680760751 1674 bc8152300419fe7951ca666a4f471165 ""
-  "sections/q3c.tex" 1680516480 266 2d10d81823c12198a5b1044a9fc23ebc ""
+  "sections/q3b.tex" 1680761308 1680 ad1b5a56c024ce259c523c21bcdac632 ""
+  "sections/q3c.tex" 1680761998 1551 a083989eaa57e074e4de5121eb19a554 ""
   "sections/q4.tex" 1680617218 2102 9cd859b6b17b57c835c57d1287911627 ""
   "sections/q5a.tex" 1680688623 1057 e69609c646e3f0db22172f49d3ea2b72 ""
   "sections/q5b.tex" 1680714139 4669 15a56b14357c16d47fa5e41a7bd4c4b1 ""

@@ -19,9 +19,9 @@ We can rewrite this state using a convenient two-dimensional basis of solutions,
 In this basis, the initial state $\ket{\Phi_0}$ forms an angle $\theta = \arcsin (\frac{\sqrt{M}}{\sqrt{N}})$ with the horizontal axis, and each iteration of Grover's algorithm increases this angle by exactly $2\theta$.
 After one iteration of Grover's algorithm, the initial state $\ket{\Phi_0} = (1, \theta)$ in polar form is modified to $\ket{\Phi_1} = (1, 3\theta)$.
 
-One can calculate the probability of measuring a quantiy, $q$, in $S$ by projecting $\ket{\Phi_1}$ on to the vertical axis
+One can calculate the probability of measuring a solution $S^\prime \in S$ by projecting $\ket{\Phi_1}$ on to the vertical axis
 \begin{align*}
-	Pr(q \in S) &= \arcsin(3\theta) \\
+	Pr(S^\prime) &= \arcsin(3\theta) \\
 	&= \arcsin(\frac{3\sqrt{5}}{\sqrt{32}}) \\
 	&\approx 0.9388
 \end{align*}
