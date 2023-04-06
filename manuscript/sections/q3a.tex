@@ -6,7 +6,7 @@ Briefly describe your implementation of this circuit including any optimisations
 
 \textbf{Answer}. Let $S = \{1, 3, 7, 22, 25\}$ denote the set of solutions. 
 Let $M=|S|$ denote the cardinality of $S$.
-We can construct an oracle to apply a phase to the computational states $\ket{i} \forall i \in S$ using a series of $X$ gates and controlled-$Z$ gates. The general intution of an example (non-optimised) circuit is as follows: 
+We can construct an oracle to apply a phase to the computational states $\ket{i} \forall i \in S$ using a series of $X$ gates and controlled-$Z$ gates. The general intuition of an example (non-optimised) circuit is as follows: 
 
 Given a target $S^\prime \in S$, we first apply $X$ gates to flip all qubits corresponding to $0$-valued bits in the binary representation of $S^\prime$. 
 Then, we apply a controlled-$Z$ gate (controlled on $\ket{1}$ state) with any given qubit as a target, and all remaining qubits as controls.
