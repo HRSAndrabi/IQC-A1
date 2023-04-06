@@ -2,6 +2,28 @@
 Show your working.
 
 
-\textbf{Answer}. [Insert Answer]
+\textbf{Answer}. Continue with the same notation as part (a), with $S = \{1, 3, 7, 22, 25\}$ denoting the set of solutions and
+$M=|S|$ denoting the cardinality of $S$.
+We begin with an initial state in equal superposition
+\begin{align*}
+\ket{\phi} &= \frac{1}{\sqrt{N}}\sum_{i=0}^{N-1}\ket{i}
+\end{align*}
+
+We can rewrite this state using a convenient two-dimensional basis of solutions, $\ket{a}$, and non-solutions, $\ket{b}$
+\begin{align*}
+	\ket{a} &= \frac{1}{\sqrt{M}}\sum_{i \in S}\ket{i},\;\;\; \ket{b} = \frac{1}{\sqrt{N-M}}\sum_{i \notin S}\ket{i} \\
+	\ket{\Phi_0} &= \alpha \ket{a} + \beta \ket{b},\;\; \text{where} \\ 
+	\alpha &= \frac{\sqrt{M}}{\sqrt{N}}, \;\;\; \beta = \frac{\sqrt{N-M}}{\sqrt{N}}
+\end{align*}
+
+In this basis, the initial state $\ket{\Phi_0}$ forms an angle $\theta = \arcsin (\frac{\sqrt{M}}{\sqrt{N}})$ with the horizontal axis, and each iteration of Grover's algorithm increases this angle by exactly $2\theta$.
+After one iteration of Grover's algorithm, the initial state $\ket{\Phi_0} = (1, \theta)$ in polar form is modified to $\ket{\Phi_1} = (1, 3\theta)$.
+
+One can calculate the probability of measuring a quantiy, $q$, in $S$ by projecting $\ket{\Phi_1}$ on to the vertical axis
+\begin{align*}
+	Pr(q \in S) &= \arcsin(3\theta) \\
+	&= \arcsin(\frac{3\sqrt{5}}{\sqrt{32}}) \\
+	&\approx 0.9388
+\end{align*}
 
 
