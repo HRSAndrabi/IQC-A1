@@ -4,6 +4,18 @@ Optimise your circuit to use as few operations as possible.
 Briefly describe your implementation of this circuit including any optimisations which you have made.
 
 
-\textbf{Answer}. [Insert Answer]
+\textbf{Answer}. Let $S = \{1, 3, 7, 22, 25\}$ denote the set of solutions. 
+Let $M=|S|$ denote the cardinality of $S$.
+We can construct an oracle to apply a phase to the computational states $\ket{i} \forall i \in S$ using a series of $X$ gates and controlled-$Z$ gates. The general intution of an example (non-optimised) circuit is as follows: 
 
+Given a target $S^\prime \in S$, we first apply $X$ gates to flip all qubits corresponding to $0$-valued bits in the binary representation of $S^\prime$. 
+Then, we apply a controlled-$Z$ gate (controlled on $\ket{1}$ state) with any given qubit as a target, and all remaining qubits as controls.
+This controlled-$Z$ gate flips the phase of the target qubit if the input state $\psi_0$ matches the binary representation of $S^\prime$.
+We then revert each qubit back to it's initial computational state using $X$ gates.
+In this way, we construct a complete circuit by chaining $M$ components, where the action of each component is such that it applies a phase to a unique computational state $S^\prime \in S$.
+
+One can optimise this circuit to use only controlled-$Z$ gates, by methodically setting the control computational states to match the binary representations of solutions in $S$.
+For example, one could detect an input string $00001$ $(S^\prime=1)$ using a CNOT gate that is controlled by the $\ket{0}$ state in the first four qubits, and the $\ket{1}$ state in the final qubit.
+This optimised circuit\footnote{Access this circuit at \url{https://qui.science.unimelb.edu.au/circuits/642e4c77d5f0500054592227
+}} achieves the target function of the Oracle in five operations.
 
